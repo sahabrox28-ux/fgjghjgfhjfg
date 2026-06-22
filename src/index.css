@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800&family=Space+Grotesk:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Montserrat", "Space Grotesk", sans-serif;
+  
+  --color-gold-50: #fefcf0;
+  --color-gold-100: #fbf5cd;
+  --color-gold-200: #f6e897;
+  --color-gold-300: #edd255;
+  --color-gold-400: #e2b724;
+  --color-gold-500: #D4AF37; /* Metallic Gold */
+  --color-gold-600: #b58d24;
+  --color-gold-700: #906c1a;
+  --color-gold-800: #715216;
+  --color-gold-900: #5d4315;
+  --color-gold-950: #362308;
+
+  --color-matte-black: #121212;
+  --color-deep-charcoal: #1c1c1c;
+}
+
+/* Custom styles for high-end grit look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+/* Gritty overlay filter */
+.grit-overlay {
+  background-image: radial-gradient(#ffffff03 1px, transparent 0), radial-gradient(#ffffff03 1px, transparent 0);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
